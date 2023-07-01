@@ -10,38 +10,42 @@
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-  <header>
-    <div>
-      <img src="assets/images/logo.svg" alt="Meet Logo" />
+  <header class="header">
+    <div class="header__logo-container">
+      <img src="assets/images/logo.svg" alt="Meet Logo" class="header__logo"/>
     </div>
-    <section>
-      <h1>Group Chat for Everyone</h1>
+    <section class="header__content">
+      <h1 class="header__heading">Group Chat for Everyone</h1>
       <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-      <button>Download v1.3</button>
-      <button>What is it?</button>
+      <button class="cta cta--primary">Download v1.3</button>
+      <button class="cta cta--secondary">What is it?</button>
     </section>
   </header>
 
   <main>
-    <section>
-      <div>01</div>
-      <div>
-        <img src="assets/images/desktop/image-woman-in-videocall.jpg" alt="" />
-        <img src="assets/images/desktop/image-women-videochatting.jpg" alt="" />
-        <img src="assets/images/desktop/image-men-in-meeting.jpg" alt="" />
-        <img src="assets/images/desktop/image-man-texting.jpg" alt="" />
+    <section class="highlights">
+      <div class="number">01</div>
+      <div class="highlights__content">
+        <div class="highlights__images">
+          <img src="assets/images/desktop/image-woman-in-videocall.jpg" alt="" class="highlights__img "/>
+          <img src="assets/images/desktop/image-women-videochatting.jpg" alt="" class="highlights__img "/>
+          <img src="assets/images/desktop/image-men-in-meeting.jpg" alt="" class="highlights__img "/>
+          <img src="assets/images/desktop/image-man-texting.jpg" alt="" class="highlights__img "/>
+        </div>
+        <p class="highlights__pre-heading">Built for modern use</p>
+        <h2 class="highlights__heading">Smarter meetings, all in one place</h2>
+        <p>Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
       </div>
-      <p>Built for modern use</p>
-      <h2>Smarter meetings, all in one place</h2>
-      <p>Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
     </section>
   </main>
 
-  <footer>
-    <div>02</div>
-    <h2>Experience more together</h2>
-    <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-    <button>Download v1.3</button>
+  <footer class="footer">
+    <div class="number">02</div>
+    <div class="footer__content">
+      <h2 class="footer__heading">Experience more together</h2>
+      <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+      <button class="cta cta--primary">Download v1.3</button>
+    </div>
   </footer>
 </body>
 </html>
