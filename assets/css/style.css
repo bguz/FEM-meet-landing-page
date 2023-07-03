@@ -91,16 +91,13 @@ p {
 }
 /* Header */
 .header {
+  position: relative;
   padding: 4rem 0 8rem 0;
 }
 .header .header__logo-container {
   padding-bottom: 4rem;
   display: flex;
   justify-content: center;
-}
-.header .header__decor .mobile {
-  margin: 0 auto;
-  padding: 2rem 0 4rem 0;
 }
 .header .header__decor .desktop {
   display: none;
