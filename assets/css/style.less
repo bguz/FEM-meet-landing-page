@@ -108,7 +108,9 @@ p {
     .header__decor {
 
         .mobile {
-            
+            margin: 1.5rem auto 3rem auto;
+            width: 100%;
+            position: relative;
         }
         .desktop {
             display: none;
@@ -124,7 +126,7 @@ p {
 }
 
 .highlights {
-    padding: 8rem 0 8rem 0;
+    padding: 0 0 5rem 0;
     
     .highlights__content {
         display: flex;
@@ -194,3 +196,32 @@ p {
         top: -100px;
     }
 }
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .header {
+        .header__content {
+            max-width: 45rem;
+            margin: 0 auto;
+        }
+        .buttons-container {
+            flex-direction: row;
+        }
+    }
+    .highlights {
+        padding-top: 5rem;
+
+        .highlights__content {
+
+            .highlights__images {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+ }
+
+
+// 992
+//1200
+// 1400
