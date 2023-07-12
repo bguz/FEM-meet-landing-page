@@ -185,7 +185,7 @@ p {
 .number.two {
   top: 6.5rem;
 }
-.number ::before {
+.number::before {
   content: '';
   width: 1px;
   background-color: hsla(240, 10%, 57%, 0.25);
