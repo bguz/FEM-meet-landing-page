@@ -180,7 +180,7 @@ p {
   border: 1px solid hsla(240, 10%, 57%, 0.25);
   border-radius: 50%;
   position: relative;
-  margin: 0 auto;
+  margin: 4rem auto;
 }
 .number.two {
   top: 6.5rem;
