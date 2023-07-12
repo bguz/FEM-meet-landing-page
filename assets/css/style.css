@@ -35,6 +35,7 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 1.6rem;
   color: hsl(240, 10%, 57%);
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -73,6 +74,9 @@ p {
   border: none;
   color: hsl(0, 0%, 98%);
   font-weight: 900;
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
 }
 .cta--primary {
   background-color: hsl(192, 37%, 48%);
@@ -80,8 +84,14 @@ p {
 .cta--primary .version {
   color: hsl(192, 90%, 77%);
 }
+.cta--primary:hover {
+  background-color: hsl(192, 54%, 64%);
+}
 .cta--secondary {
   background-color: hsl(268, 34%, 53%);
+}
+.cta--secondary:hover {
+  background-color: hsl(267, 54%, 71%);
 }
 .cta--secondary .version {
   color: hsl(268, 100%, 86%);
@@ -103,8 +113,12 @@ p {
   margin: 1.5rem auto 3rem auto;
   width: 100%;
   position: relative;
+  max-width: 110%;
+  left: -5%;
+  width: 110%;
 }
-.header .header__decor .desktop {
+.header .header__decor .desktop-l,
+.header .header__decor .desktop-r {
   display: none;
 }
 .header .header__content {
@@ -113,6 +127,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+  padding: 0 2.5rem;
 }
 .highlights {
   padding: 0 0 5rem 0;
@@ -131,11 +146,12 @@ p {
   letter-spacing: 0.4rem;
   text-transform: uppercase;
 }
-.highlights .highlights__content .highlights__images {
+.highlights .highlights__images {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 4rem;
 }
-.highlights .highlights__content .highlights__images .highlights__img {
+.highlights .highlights__images .highlights__img {
   padding: 1rem;
   border-radius: 1.8rem;
 }
@@ -179,6 +195,9 @@ p {
   top: -100px;
 }
 @media (min-width: 768px) {
+  .header {
+    padding-bottom: 12rem;
+  }
   .header .header__content {
     max-width: 45rem;
     margin: 0 auto;
@@ -186,10 +205,61 @@ p {
   .header .buttons-container {
     flex-direction: row;
   }
-  .highlights {
-    padding-top: 5rem;
-  }
-  .highlights .highlights__content .highlights__images {
+  .highlights .highlights__images {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .highlights .highlights__content {
+    max-width: 57rem;
+    margin: 0 auto;
+  }
+  .footer .footer__content {
+    max-width: 57rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1275px) {
+  .header {
+    padding-bottom: 15rem;
+  }
+  .header .header__logo-container {
+    padding-bottom: 7rem;
+  }
+  .header .header__heading {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+  .header .header__content {
+    max-width: 54rem;
+  }
+  .header .header__decor {
+    position: relative;
+  }
+  .header .header__decor .mobile {
+    display: none;
+  }
+  .header .header__decor .desktop-l,
+  .header .header__decor .desktop-r {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+  }
+  .header .header__decor .desktop-l {
+    left: -3.5rem;
+  }
+  .header .header__decor .desktop-r {
+    right: -3.5rem;
+  }
+  .highlights .highlights__content {
+    max-width: 54rem;
+  }
+  .footer .footer__content {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footer__heading,
+  .footer p {
+    text-align: left;
   }
 }
